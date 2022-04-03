@@ -1,0 +1,34 @@
+{
+  "name": "nomref-web",
+  "version": "1.0.0",
+  "description": "Aggregator of Weather Stations",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config backend/server",
+    "server": "nodemon -r dotenv/config backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Ivan Podsevalov",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/roboto": "^4.5.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@reduxjs/toolkit": "^1.6.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2",
+    "node-geocoder": "^3.27.0",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0"
+  }
+}
